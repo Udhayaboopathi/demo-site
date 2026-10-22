@@ -28,7 +28,7 @@ export default function PrivacyPage() {
       }}
     >
       <LegalSection title="What personal information does this website collect?">
-        <p>The order page does not upload the bag to Crumb & Bloom. The <a href="/login">sign-in</a> and <a href="/signup">sign-up</a> pages show name, email, and password fields for layout only. Submitting them stays in this browser and is not sent to Crumb & Bloom. The <a href="/accounts">account page</a> shows sample orders, not a saved profile. There is no third-party analytics tool on this site.</p>
+        <p>The order page does not upload the bag to Crumb & Bloom. The <a href="/login">sign-in</a> and <a href="/signup">sign-up</a> pages show name, email, and password fields for layout only. Submitting them stays in this browser and is not sent to Crumb & Bloom. The <a href="/accounts">account page</a> shows sample orders, not a saved profile. The <a href="/admin">kitchen desk</a> keeps products, crew notes, attendance, payslips, and counter tickets in this browser under crumb-bloom-admin. It does not upload them. There is no third-party analytics tool on this site.</p>
       </LegalSection>
       <LegalSection title="Where is my order bag stored?">
         <p>The <a href="/checkout">order page</a> saves the bag in this browser’s local storage under the name crumb-bloom-order. Each saved line has the product name, the price, and the quantity. That information stays on the device you used. It remains until you empty the bag or clear this site’s data in the browser.</p>

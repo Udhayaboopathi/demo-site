@@ -76,7 +76,7 @@ export function BakeryNavigation() {
             <a key={link.href} href={link.href} className={`inline-flex min-h-11 items-center ${isActive(link.href) ? 'text-[#3f2c25]' : ''}`} aria-current={isActive(link.href) ? 'page' : undefined}>{link.label}</a>
           ))}
         </nav>
-        <div className="flex shrink-0 items-center gap-2 sm:gap-3"><a href="/checkout" className="secondary-button hidden sm:inline-flex">Order online <ShoppingBag size={15} /></a><a href="/checkout" className="icon-button" aria-label="Shopping bag"><ShoppingBag size={18} /></a><button ref={menuButtonRef} type="button" className="icon-button md:hidden" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} aria-controls={panelId} onClick={() => setOpen((current) => !current)}>{open ? <X size={20} /> : <MenuIcon size={20} />}</button></div>
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3"><a href="/admin" className="secondary-button hidden sm:inline-flex">Admin</a><a href="/checkout" className="icon-button" aria-label="Shopping bag"><ShoppingBag size={18} /></a><button ref={menuButtonRef} type="button" className="icon-button md:hidden" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} aria-controls={panelId} onClick={() => setOpen((current) => !current)}>{open ? <X size={20} /> : <MenuIcon size={20} />}</button></div>
       </div>
       <div className="mobile-drawer" data-open={open} inert={!open ? true : undefined}>
         <button type="button" className="mobile-drawer-backdrop" aria-label="Close menu" tabIndex={open ? 0 : -1} onClick={() => setOpen(false)} />
@@ -127,6 +127,7 @@ export function BakeryFooter({ className = '' }: { className?: string }) {
           <ul className="mt-1">
             <li><a href="/terms" className="text-link text-sm">Terms</a></li>
             <li><a href="/privacy" className="text-link text-sm">Privacy</a></li>
+            <li><a href="/admin" className="text-link text-sm">Kitchen desk</a></li>
           </ul>
         </nav>
       </div>
